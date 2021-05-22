@@ -56,7 +56,7 @@ if __name__ == '__main__':
 	wasOff=True
 	while True:
 		(_,frame) = camera.read()
-		x,y = colorCoords(frame,lower,upper,screenSize,resize=True, showCircle=True, showCamera=True)
+		x,y = colorCoords(frame,lower,upper,screenSize,resize=True, showCircle=True, showCamera=False)
 		if x>=0:
 			if wasOff:		
 				wasOff= False
